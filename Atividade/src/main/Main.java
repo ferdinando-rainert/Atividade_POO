@@ -10,7 +10,7 @@ public class Main {
 		
 		Scanner sc = new Scanner(System.in);
 		
-		Aluno aluno = new Aluno ("Ferdinando", "POO", 10.00);
+		Aluno aluno = new Aluno ("Ferdinando", "POO", 10.00, 10.00, 10.00);
 		
 		double nota1;
 		double nota2;
@@ -20,8 +20,6 @@ public class Main {
 		String nome = sc.nextLine();
 		System.out.println("Digite o nome da disciplina: ");
 		String disciplina = sc.nextLine();
-		
-        Aluno aluno1 = new Aluno(nome, disciplina, 0);
         
         System.out.print("Digite a nota 1: ");
         nota1 = sc.nextDouble();
@@ -32,11 +30,7 @@ public class Main {
         System.out.print("Digite a nota 3: ");
         nota3 = sc.nextDouble();
         
-        aluno1.setMedia(
-            aluno1.validaNota(nota1) +
-            aluno1.validaNota(nota2) +
-            aluno1.validaNota(nota3)
-        );
+        Aluno aluno1 = new Aluno(nome, disciplina, nota1, nota2, nota3);
         
         aluno1.info();
         
