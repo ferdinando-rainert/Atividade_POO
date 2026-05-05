@@ -82,10 +82,15 @@ public class Aluno {
 		
 	}
 	
+	public double getMediaPonderada() {
+		return ( (getNota1() * 2) + (getNota2() * 2) + (getNota3() * 6))/ (getNota1() + getNota2() + getNota3());
+	}
+	
 	
 	public void info() {
 		System.out.println("Nome do aluno: " + getNome());
 		System.out.println("Nome da disciplina: " + getDisciplina());
 		System.out.println("Média final: " + getMedia());
+		System.out.println("Média ponderada: " + getMediaPonderada());
 	}
 }
