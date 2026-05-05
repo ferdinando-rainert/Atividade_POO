@@ -32,6 +32,7 @@ public class Main {
         
         Aluno aluno1 = new Aluno(nome, disciplina, nota1, nota2, nota3);
         
+        aluno1.validaNota();
         aluno1.info();
         
         sc.close();

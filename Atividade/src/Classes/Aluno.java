@@ -60,6 +60,28 @@ public class Aluno {
 		return (getNota1() + getNota2() + getNota3())/3;
 	}
 
+	public void validaNota() {
+		
+		if(getNota1() < 0) {
+			setNota1(0);
+		}else if(getNota1() > 10) {
+			setNota1(10);
+		}
+		
+		if(getNota2() < 0) {
+			setNota2(0);
+		}else if(getNota2() > 10) {
+			setNota2(10);
+		}
+		
+		if(getNota3() < 0) {
+			setNota3(0);
+		}else if(getNota3() > 10) {
+			setNota3(10);
+		}
+		
+	}
+	
 	
 	public void info() {
 		System.out.println("Nome do aluno: " + getNome());
